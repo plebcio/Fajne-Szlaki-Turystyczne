@@ -89,6 +89,10 @@ class TrailRepository {
     }
 
     fun getTrailbyId(id: Int): Trail {
+        // check for out of range access
+        if (id < 0 || id >= trails.size) {
+            return Trail()
+        }
         return trails[id]
     }
 
