@@ -28,8 +28,8 @@ class SecondScreenViewModel (
 
     fun toggleTimer() {
         // start timer
-        val timerState = _uiState.value.IsTimerStarted
-        _uiState.value = _uiState.value.copy(IsTimerStarted = !timerState)
+        val timerState = _uiState.value.isTimerStarted
+        _uiState.value = _uiState.value.copy(isTimerStarted = !timerState)
     }
 
     init {
@@ -43,6 +43,4 @@ class SecondScreenViewModel (
             isTrailChosen = false
         }
     }
-
-
 }
